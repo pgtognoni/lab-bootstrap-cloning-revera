@@ -86,7 +86,8 @@ header {
 .carousel-control-next-icon {
     font-family: 'Righteous', cursive;
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 3.1rem;
+    line-height: 2rem;
 }
 
 .img-carousel {
