@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --red-bg: #ed564b;
+    --text-light: #aaa; 
+    --text-red: #f4473a;
+    --border-red: #f96b61;
+    --bg-dark: #3b3b3b;
+    --bg-black: #292929;
+    --text: rgb(220, 217, 217);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.navmobile {
+    display: none
+}
+
+@media screen and (max-width: 768px) {
+    .navmobile {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+}
+
+.navbar {
+    padding: 1.5rem 3rem;
+}
+.navbar-brand h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.dropdown-menu:hover {
+    display: block;
+}
+.arrow-right {
+    font-size: .6rem;
+    vertical-align: .13rem;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--text-red);
+}
+
+
+
+header {
+    background-color: var(--red-bg);
+    border-bottom: .5rem solid var(--border-red)
+}
+
+.carousel,
+.section-2 {
+    border-bottom: .5rem solid var(--border-red)
+}
+
+.icon-prev,
+.icon-next {
+    background-color: var(--red-bg);
+    height: 7rem;
+    width: 3rem;
+    margin: auto 0;
+    opacity: 1;
+}   
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.img-carousel {
+    position: relative;
+}
+
+.carousel-item img {
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url('/starter-code/img/overlay.png');
+}
+
+.carousel-caption {
+    opacity: .8;
+    margin-bottom: -1.5rem;
+}
+.carousel-caption h5{
+    font-size: 2.8rem;
+}
+
+.carousel-caption p{
+    font-size: 1.5rem;
+}
+
+.carousel-caption a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: .8rem 2.5rem;
+    background-color: rgba(255, 255,255, .1);
+}
+
+.features {
+    color: #fff;
+    padding: 3rem 0;
+    margin: 0 auto;
+    opacity: .8;
+}
+
+.grid-container {
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.features h2 {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+}
+
+.features p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.features i {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    border: 0.4rem solid #fff;
+    border-radius: 100%;
+    padding: 1.5rem;
+}
+
+section {
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.section-title h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.section-title h4 {
+    text-transform: uppercase;
+    font-weight: 600; 
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.seccion-container {
+    margin-top: 3rem;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.img-project {
+    width: 90%;
+    margin-bottom: 1.6rem;
+}
+
+.section-1 .grid-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    margin: 0 1.5rem;
+}
+
+.section-2 .grid-item h4 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 0 .2rem;
+}
+
+.section-2 .grid-item h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6b6b6b;
+    width: 90%;
+    margin: .8rem 0;
+}
+
+.text-red {
+    color: var(--text-red);
+}
+
+.section-2 .grid-item p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #6b6b6b;
+    width: 90%;
+}
+
+.bottom {
+    background-color: var(--bg-dark);
+    padding: 3rem 0;
+}
+
+.bottom h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.bottom p,
+.bottom a {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.bottom li {
+    border-bottom: 1px dotted #aaa;
+    padding: .5rem 0;
+} 
+
+.bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--bg-black);
+    padding: 3rem 0;
+    margin: 0 !important;
+}
+
+footer .copyright {
+    color: var(--text);
+}
