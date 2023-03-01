@@ -104,7 +104,7 @@ header {
     height: 100%;
     position: absolute;
     top: 0;
-    background-image: url('/starter-code/img/overlay.png');
+    background-image: url('./starter-code/img/overlay.png');
 }
 
 .carousel-caption {
